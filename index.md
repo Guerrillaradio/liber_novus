@@ -2,8 +2,9 @@
 <p>esteganografia
                                            
 
-![gr](The fool - esteganografia.png)
 
+
+<img width="372" height="554" alt="The fool - esteganografia" src="https://github.com/user-attachments/assets/be1560f8-88a3-4c52-8bfe-cdf04cf2d7ee" />
 
 
 <div><font color="#fff300">REFERENTES</font></div><div></div><div><font color="#fff300"> </font><font color="#fff300"> </font></div>
