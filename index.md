@@ -1,5 +1,5 @@
               
-<p>BUAN
+<p>esteganografia
                                            
 <p>no hay capitalismo sin propiedad privada.
 <p>metro cuadrado (m2): unidad basica de superficie.
