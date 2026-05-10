@@ -1,7 +1,39 @@
 
+
 ---
 layout: default
 ---
+
+<style>
+  body {
+    background-color: #000000;
+    color: #00ff00;
+    font-family: monospace;
+  }
+
+  input, button {
+    background-color: #000000;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    font-family: monospace;
+  }
+
+  input::placeholder {
+    color: #00ff00;
+    opacity: 0.6;
+  }
+
+  button:hover {
+    background-color: #00ff00;
+    color: #000000;
+  }
+
+  .hint {
+    color: #00ff00;
+    opacity: 0.8;
+    font-size: 0.9em;
+  }
+</style>
 
 <h1>¿Dónde estás?</h1>
 
@@ -17,9 +49,12 @@ layout: default
     <input id="country" placeholder="país">
   </div>
 
+  <p class="hint">Si no sabes, escribe: <strong>desconocido</strong></p>
+
   <button onclick="checkAnswer()">responder</button>
 </div>
 
 <p id="feedback"></p>
 
 <script src="game.js"></script>
+``
