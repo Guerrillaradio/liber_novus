@@ -10,7 +10,7 @@ const places = [
   },
   {
     image: "assets/images/australia.png",
-    continent: "europa",
+    continent: "oceania",
     country: "australia"
   },
   {
