@@ -4,89 +4,109 @@ let current = null;
 
 const places = [
   {
-    image: "assets/images/Captura de pantalla 2024-12-31 003926.png",
-    continent: "oceania",
+    image: "assets/images/arabia_saudita.png",
+    continent: "asia",
+    country: "arabia saudita"
+  },
+  {
+    image: "assets/images/australia.png",
+    continent: "europa",
     country: "australia"
   },
   {
-    image: "assets/images/Captura de pantalla 2025-09-06 213006.png",
+    image: "assets/images/barcelona.png",
     continent: "europa",
-    country: "grecia"
+    country: "barcelona"
   },
   {
-    image: "assets/images/Captura de pantalla 2025-09-06 213935.png",
-    continent: "america",
-    country: "peru"
-  },
-  {
-    image: "assets/images/Captura de pantalla 2025-09-25 191932.png",
-    continent: "asia",
-    country: "japon"
-  },
-  {
-    image: "assets/images/Captura de pantalla 2025-09-25 210135.png",
-    continent: "europa",
-    country: "grecia"
-  },
-  {
-    image: "assets/images/Captura de pantalla 2025-09-25 210302.png",
-    continent: "europa",
-    country: "grecia"
-  },
-  {
-    image: "assets/images/Captura de pantalla 2025-09-25 210500.png",
-    continent: "europa",
-    country: "italia"
-  },
-  {
-    image: "assets/images/Captura de pantalla 2025-09-25 211002.png",
-    continent: "europa",
-    country: "italia"
-  },
-  {
-    image: "assets/images/Captura de pantalla 2025-09-25 211212.png",
-    continent: "africa",
-    country: "tunez"
-  },
-  {
-    image: "assets/images/Captura de pantalla 2025-09-25 211403.png",
-    continent: "africa",
-    country: "tunez"
-  },
-  {
-    image: "assets/images/Captura de pantalla 2025-09-25 211837.png",
-    continent: "europa",
-    country: "Barcelona"
-  },
-  {
-    image: "assets/images/Captura de pantalla 2025-09-25 191932.png",
-    continent: "asia",
-    country: "japon"
-  },
-  {
-    image: "assets/images/Captura de pantalla 2025-09-25 191932.png",
-    continent: "asia",
-    country: "japon"
-  },
-  {
-    image: "assets/images/Captura de pantalla 2025-11-16 041031.png",
-    continent: "europa",
-    country: "italia"
-  },
-  {
-    image: "assets/images/Captura de pantalla 2025-12-26 163429.png",
+    image: "assets/images/chile.png",
     continent: "america",
     country: "chile"
   },
   {
-    image: "assets/images/Captura de pantalla 2025-12-26 201414.png",
+    image: "assets/images/chile2.png",
+    continent: "america",
+    country: "chile"
+  },
+  {
+    image: "assets/images/desconocido.png",
+    continent: "desconocido",
+    country: "desconocido"
+  },
+  {
+    image: "assets/images/estados_unidos.png",
+    continent: "america",
+    country: "estados unidos"
+  },
+  {
+    image: "assets/images/grecia1.png",
+    continent: "europa",
+    country: "grecia"
+  },
+  {
+    image: "assets/images/grecia2.png",
+    continent: "europa",
+    country: "grecia"
+  },
+  {
+    image: "assets/images/grecia3.png",
+    continent: "europa",
+    country: "grecia"
+  },
+  {
+    image: "assets/images/italia1.png",
+    continent: "europa",
+    country: "italia"
+  },
+  {
+    image: "assets/images/italia2.png",
+    continent: "europa",
+    country: "italia"
+  },
+  {
+    image: "assets/images/italia4.png",
+    continent: "europa",
+    country: "italia"
+  },
+  {
+    image: "assets/images/japon.png",
+    continent: "asia",
+    country: "japon"
+  },
+  {
+    image: "assets/images/japon2.png",
+    continent: "asia",
+    country: "japon"
+  },
+  {
+    image: "assets/images/japon3.png",
+    continent: "asia",
+    country: "japon"
+  },
+  {
+    image: "assets/images/mongolia.png",
+    continent: "asia",
+    country: "mongolia"
+  },
+  {
+    image: "assets/images/peru.png",
+    continent: "america",
+    country: "peru"
+  },
+  {
+    image: "assets/images/taiwan.png",
     continent: "asia",
     country: "taiwan"
   },
   {
-    image: "assets/images/Captura de pantalla 2026-01-17 213900.png",
-    continent: "asia",
-    country: "arabia saudita"
+    image: "assets/images/tunez.png",
+    continent: "africa",
+    country: "tunez"
+  },
+  {
+    image: "assets/images/tunez2.png",
+    continent: "africa",
+    country: "tunez"
   },
   // puedes añadir más
 ];
