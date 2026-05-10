@@ -48,6 +48,19 @@ layout: default
     margin: 20px auto;
     max-width: 400px;
   }
+  
+/* CURSOR TERMINAL */
+  .cursor::after {
+    content: "█";
+    margin-left: 6px;
+    animation: blink 1s steps(1) infinite;
+  }
+
+  @keyframes blink {
+    0%   { opacity: 1; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+  }
 </style>
 
 <h1> class="cursor">¿Qué lugar es?</h1>
