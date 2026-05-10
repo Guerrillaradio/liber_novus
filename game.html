@@ -1,8 +1,6 @@
 
 
 
-
-
 <style>
   body {
     background-color: #000000;
@@ -48,7 +46,7 @@
     max-width: 400px;
   }
 
-  /* CURSOR TIPO TERMINAL (BLOQUE) */
+  /* CURSOR TIPO TERMINAL (BLOQUE) — TÍTULO */
   #terminal-cursor {
     display: inline-block;
     margin-left: 6px;
@@ -59,6 +57,28 @@
     0%   { opacity: 1; }
     50%  { opacity: 0; }
     100% { opacity: 1; }
+  }
+
+  /* ===== CURSOR TIPO TERMINAL DENTRO DEL INPUT ===== */
+
+  /* Ocultar caret real */
+  input:focus {
+    caret-color: transparent;
+  }
+
+  /* Dibujar cursor tipo bloque dentro del input */
+  input:focus {
+    background-image: linear-gradient(#00ff00, #00ff00);
+    background-repeat: no-repeat;
+    background-size: 0.6em 1.2em;
+    background-position: 0.6em center;
+    animation: input-blink 1s steps(1) infinite;
+  }
+
+  @keyframes input-blink {
+    0%   { background-image: linear-gradient(#00ff00, #00ff00); }
+    50%  { background-image: none; }
+    100% { background-image: linear-gradient(#00ff00, #00ff00); }
   }
 </style>
 
@@ -88,7 +108,7 @@
 
 <script src="game.js"></script>
 
-<!-- SCRIPT PARA MOVER EL CURSOR AL INPUT ACTIVO -->
+<!-- SCRIPT PARA MOVER EL CURSOR DEL TÍTULO AL INPUT ACTIVO -->
 <script>
   const cursor = document.getElementById("terminal-cursor");
   const title = document.querySelector("h1");
@@ -104,4 +124,5 @@
     });
   });
 </script>
+
 
