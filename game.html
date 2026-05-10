@@ -1,6 +1,7 @@
 
 
 
+
 <style>
   body {
     background-color: #000000;
@@ -45,8 +46,8 @@
     margin: 20px auto;
     max-width: 400px;
   }
-  
-/* CURSOR TERMINAL */
+
+  /* CURSOR TIPO TERMINAL (BLOQUE) */
   .cursor::after {
     content: "█";
     margin-left: 6px;
@@ -60,7 +61,7 @@
   }
 </style>
 
-<h1>¿Qué lugar es?</h1>
+<h1 class="cursor">¿Qué lugar es?</h1>
 
 <p>Puntos: <span id="score">0</span></p>
 
@@ -70,11 +71,22 @@
   <div>
     <input id="continent" placeholder="continente">
   </div>
+
   <div>
     <input id="country" placeholder="país">
   </div>
 
-  <p class="hint">Si no sabes, escribe: <strong>desconocido</strong></p>
+  <p class="hint">
+    Si no sabes, escribe: <strong>desconocido</strong>
+  </p>
+
+  <button onclick="checkAnswer()">responder</button>
+</div>
+
+<p id="feedback"></p>
+
+<script src="game.js"></script>
+
 
   <button onclick="checkAnswer()">responder</button>
 </div>
