@@ -2,6 +2,7 @@
 
 
 
+
 <style>
   body {
     background-color: #000000;
@@ -48,8 +49,8 @@
   }
 
   /* CURSOR TIPO TERMINAL (BLOQUE) */
-  .cursor::after {
-    content: "█";
+  #terminal-cursor {
+    display: inline-block;
     margin-left: 6px;
     animation: blink 1s steps(1) infinite;
   }
@@ -61,7 +62,7 @@
   }
 </style>
 
-<h1 class="cursor">¿Qué lugar es?</h1>
+<h1>¿Qué lugar es?<span id="terminal-cursor">█</span></h1>
 
 <p>Puntos: <span id="score">0</span></p>
 
@@ -87,10 +88,20 @@
 
 <script src="game.js"></script>
 
+<!-- SCRIPT PARA MOVER EL CURSOR AL INPUT ACTIVO -->
+<script>
+  const cursor = document.getElementById("terminal-cursor");
+  const title = document.querySelector("h1");
+  const inputs = document.querySelectorAll("input");
 
-  <button onclick="checkAnswer()">responder</button>
-</div>
+  inputs.forEach(input => {
+    input.addEventListener("focus", () => {
+      input.after(cursor);
+    });
 
-<p id="feedback"></p>
+    input.addEventListener("blur", () => {
+      title.appendChild(cursor);
+    });
+  });
+</script>
 
-<script src="game.js"></script>
