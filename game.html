@@ -1,11 +1,21 @@
 
 
+---
+layout: default
+---
 
 <style>
   body {
     background-color: #000000;
     color: #00ff00;
     font-family: monospace;
+    text-align: center;
+  }
+
+  #game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   input, button {
@@ -13,6 +23,8 @@
     color: #00ff00;
     border: 1px solid #00ff00;
     font-family: monospace;
+    margin: 6px auto;
+    text-align: center;
   }
 
   input::placeholder {
@@ -30,6 +42,12 @@
     opacity: 0.8;
     font-size: 0.9em;
   }
+
+  #image {
+    display: block;
+    margin: 20px auto;
+    max-width: 400px;
+  }
 </style>
 
 <h1>¿Dónde estás?</h1>
@@ -37,7 +55,7 @@
 <p>Puntos: <span id="score">0</span></p>
 
 <div id="game">
-  <img id="image" src="" alt="imagen" style="max-width:400px">
+  <img id="image" src="" alt="imagen">
 
   <div>
     <input id="continent" placeholder="continente">
@@ -54,4 +72,3 @@
 <p id="feedback"></p>
 
 <script src="game.js"></script>
-``
