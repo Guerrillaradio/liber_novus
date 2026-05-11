@@ -46,19 +46,7 @@
     max-width: 400px;
   }
 
-  /* CURSOR TIPO TERMINAL (BLOQUE) — TÍTULO */
-  #terminal-cursor {
-    display: inline-block;
-    margin-left: 6px;
-    animation: blink 1s steps(1) infinite;
-  }
-
-  @keyframes blink {
-    0%   { opacity: 1; }
-    50%  { opacity: 0; }
-    100% { opacity: 1; }
-  }
-
+  
   /* ===== CURSOR TIPO TERMINAL DENTRO DEL INPUT ===== */
 
   /* Ocultar caret real */
@@ -82,7 +70,7 @@
   }
 </style>
 
-<h1>¿Qué lugar es?<span id="terminal-cursor">█</span></h1>
+<h1>¿Qué lugar es?<span id="terminal-cursor"></span></h1>
 
 <p>Puntos: <span id="score">0</span></p>
 
