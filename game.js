@@ -1,7 +1,12 @@
 
-
 let score = 0;
 let index = 0;
+
+/* === MODO TODO DESCONOCIDO ===
+   true  -> todas las imágenes aceptan "desconocido" (0 puntos)
+   false -> modo normal
+*/
+const MODO_TODO_DESCONOCIDO = true;
 
 const places = [
   { image: "assets/images/arabia_saudita.png", continent: "asia", country: "arabia saudita" },
@@ -56,6 +61,23 @@ function checkAnswer() {
   const cont = document.getElementById("continent").value.toLowerCase().trim();
   const coun = document.getElementById("country").value.toLowerCase().trim();
 
+  /* === MODO TODO DESCONOCIDO === */
+  if (MODO_TODO_DESCONOCIDO) {
+    if (cont === "desconocido" && coun === "desconocido") {
+      document.getElementById("feedback").innerText =
+        "✅ desconocido aceptado (0 puntos)";
+    } else {
+      document.getElementById("feedback").innerText =
+        "⚠️ en este modo, la respuesta es 'desconocido'";
+    }
+
+    document.getElementById("score").innerText = score; // score no cambia
+    index++;
+    setTimeout(loadCurrent, 1200);
+    return;
+  }
+
+  /* === MODO NORMAL === */
   let msg = "";
 
   // CONTINENTE
@@ -117,4 +139,3 @@ function restartGame() {
 // ▶️ Inicio
 shuffle(places);
 loadCurrent();
-
