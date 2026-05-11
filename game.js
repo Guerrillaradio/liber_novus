@@ -5,9 +5,7 @@ let index = 0;
 const places = [
   { image: "assets/images/arabia_saudita.png", continent: "asia", country: "arabia saudita" },
   { image: "assets/images/australia.png", continent: "oceania", country: "australia" },
-  { image: "assets/images/barcelona.png", continent: "europa", country: "barcelona" },
   { image: "assets/images/chile.png", continent: "america", country: "chile" },
-  { image: "assets/images/chile2.png", continent: "america", country: "chile" },
   { image: "assets/images/desconocido.png", continent: "desconocido", country: "desconocido" },
   { image: "assets/images/estados_unidos.png", continent: "america", country: "estados unidos" },
   { image: "assets/images/grecia1.png", continent: "europa", country: "grecia" },
@@ -20,7 +18,6 @@ const places = [
   { image: "assets/images/japon2.png", continent: "asia", country: "japon" },
   { image: "assets/images/japon3.png", continent: "asia", country: "japon" },
   { image: "assets/images/mongolia.png", continent: "asia", country: "mongolia" },
-  { image: "assets/images/peru.png", continent: "america", country: "peru" },
   { image: "assets/images/taiwan.png", continent: "asia", country: "taiwan" },
   { image: "assets/images/tunez.png", continent: "africa", country: "tunez" },
   { image: "assets/images/tunez2.png", continent: "africa", country: "tunez" }
