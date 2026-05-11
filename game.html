@@ -45,26 +45,7 @@
     max-width: 400px;
   }
 
-  /* === CURSOR BLOQUE DENTRO DEL INPUT === */
 
-  input {
-    caret-color: transparent; /* ocultar caret real */
-  }
-
-  input:focus {
-    --cursor-pos: 0ch;
-    background-image: linear-gradient(#00ff00, #00ff00);
-    background-repeat: no-repeat;
-    background-size: 0.6em 1.2em;
-    background-position: calc(0.6em + var(--cursor-pos)) center;
-    animation: input-blink 1s steps(1) infinite;
-  }
-
-  @keyframes input-blink {
-    0%   { background-image: linear-gradient(#00ff00, #00ff00); }
-    50%  { background-image: none; }
-    100% { background-image: linear-gradient(#00ff00, #00ff00); }
-  }
 </style>
 
 <h1>¿Qué lugar es?</h1>
